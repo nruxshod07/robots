@@ -33,7 +33,7 @@ function reload(users) {
 
     if (user.age < 25) {
       upto25.append(userDiv);
-    } else if (user.age > 25 && user.age < 50) {
+    } else if (user.age >= 25 && user.age < 50) {
       after25.append(userDiv);
     } else {
       after50.append(userDiv);
@@ -100,7 +100,7 @@ form.onsubmit = function (event) {
 
     if (user.age < 25) {
       upto25.append(userDiv);
-    } else if (user.age > 25 && user.age < 50) {
+    } else if (user.age >= 25 && user.age < 50) {
       after25.append(userDiv);
     } else {
       after50.append(userDiv);
