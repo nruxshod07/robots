@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">
+        прописав человека в форму - добавьте его в необходимую колонку
+      </h1>
+
+      <form name="add">
+        <label>
+          <h3>Ф.И.</h3>
+          <input type="text" name="name" class="name" placeholder="Имя" />
+        </label>
+        <label>
+          <h3>Возраст</h3>
+          <input type="number" name="age" class="age" placeholder="Возраст" />
+        </label>
+        <button class="add">ADD</button>
+      </form>
+
+      <div class="usersAges">
+        <div class="upto25 box">
+          <h3>Люди до 25</h3>
+          <div class="users"></div>
+        </div>
+        <div class="after25 box">
+          <h3>Люди до 50</h3>
+          <div class="users"></div>
+        </div>
+        <div class="after50 box">
+          <h3>После 50</h3>
+          <div class="users"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
